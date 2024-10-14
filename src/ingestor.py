@@ -43,8 +43,8 @@ def mock_shopify_data():
                 for order in data:
                     # Flatten nested items into a separate structure
                     for item in order.pop('items', []):
-                        item['order_id'] = order['order_id']  # Link item to order
-                        yield {'order': order, 'item': item}  # Yield both order and items separately
+                        item['order_id'] = order['order_id']
+                        yield {'order': order, 'item': item}
         except (FileNotFoundError, json.JSONDecodeError) as e:
             logger.error(f"Error loading orders data: {e}")
             yield []
