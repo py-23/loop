@@ -1,0 +1,13 @@
+loop_dbt:
+  outputs:
+    dev:
+      dataset: shopify_data
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: EU
+      method: oauth
+      priority: interactive
+      project: loop-gcp-438617
+      threads: 4
+      type: bigquery
+  target: dev
