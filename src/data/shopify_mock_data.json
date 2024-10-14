@@ -1,0 +1,14 @@
+[
+    {
+        "order_id": "1001",
+        "customer_id": "C123",
+        "order_date": "2023-11-01",
+        "total_amount": 150.75
+    },
+    {
+        "order_id": "1002",
+        "customer_id": "C124",
+        "order_date": "2023-11-02",
+        "total_amount": 245.00
+    }
+]
